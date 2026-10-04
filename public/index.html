@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Placement Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Placement Tracker</h1>
+        <p>Find eligible jobs and track your applications</p>
+    </header>
+
+
+    <main>
+        <section id="loginSection">
+
+    <h2>Student Login</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+    >
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <p id="loginMessage"></p>
+
+</section>
+
+        <!-- Student Section -->
+
+        <section class="student-section">
+
+            <h2>Student Dashboard</h2>
+
+            
+
+            <button onclick="toggleEligibleJobs()">
+                Find Eligible Jobs
+            </button>
+
+            <button onclick="logout()">
+              Logout
+            </button>
+
+        </section>
+
+
+        <!-- Eligible Jobs -->
+
+        <section>
+
+            <h2>Eligible Jobs</h2>
+
+            <div id="eligibleJobs">
+                <p>
+                    Enter your Student ID to find eligible jobs.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- All Jobs -->
+
+        <section>
+
+            <h2>Available Jobs</h2>
+
+            <button onclick="toggleJobs()">
+                View All Jobs
+            </button>
+
+            <div id="jobs"></div>
+
+        </section>
+
+
+        <!-- Applications -->
+
+        <section>
+
+            <h2>My Applications</h2>
+
+            <button onclick="toggleApplications()">
+                View My Applications
+            </button>
+
+            <div id="applications"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Student Placement & Job Tracker</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
